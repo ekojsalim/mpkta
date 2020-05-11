@@ -12,6 +12,8 @@ import ReactPlayer from "react-player"
 
 import headerLogo from "../images/9-nilai-ui.png"
 
+import SEO from "../components/seo"
+
 const PlayerWrapper = styled.div`
   position: relative;
   padding-top: 56.25%;
@@ -206,85 +208,88 @@ const Anggota = () => {
 }
 
 const Fullpage = () => (
-  <ReactFullpage
-    scrollingSpeed={1000} /* Options here */
-    sectionsColor={["#fffff", "#f6d74c"]}
-    navigation={true}
-    slidesNavigation={true}
-    controlArrows={false}
-    fixedElements={"#header"}
-    paddingTop={"5rem"}
-    anchors={["video", "nilai", "anggota"]}
-    scrollOverflow
-    render={() => {
-      return (
-        <ReactFullpage.Wrapper>
-          <div id="header" css={tw`fixed top-0 h-20 py-4 px-8 w-screen`}>
-            <div css={tw`flex md:justify-between justify-center`}>
-              <div css={tw`flex items-center`}>
-                <img src={headerLogo} alt="9 Nilai UI" css={tw`w-16`} />
-              </div>
-              <div css={tw`hidden md:flex justify-center items-center`}>
-                <a
-                  href="#video"
-                  css={tw`mx-2 hover:border-b border-black text-lg`}
-                >
-                  Video
-                </a>
-                <a
-                  href="#nilai"
-                  css={tw`mx-2 hover:border-b border-black text-lg`}
-                >
-                  9 Nilai
-                </a>
-                <a
-                  href="#anggota"
-                  css={tw`mx-2 hover:border-b border-black text-lg`}
-                >
-                  Anggota
-                </a>
+  <>
+    <SEO description="9 Nilai UI by FG 5" title="9 Nilai UI" />
+    <ReactFullpage
+      scrollingSpeed={1000} /* Options here */
+      sectionsColor={["#fffff", "#f6d74c"]}
+      navigation={true}
+      slidesNavigation={true}
+      controlArrows={false}
+      fixedElements={"#header"}
+      paddingTop={"5rem"}
+      anchors={["video", "nilai", "anggota"]}
+      scrollOverflow
+      render={() => {
+        return (
+          <ReactFullpage.Wrapper>
+            <div id="header" css={tw`fixed top-0 h-20 py-4 px-8 w-screen`}>
+              <div css={tw`flex md:justify-between justify-center`}>
+                <div css={tw`flex items-center`}>
+                  <img src={headerLogo} alt="9 Nilai UI" css={tw`w-16`} />
+                </div>
+                <div css={tw`hidden md:flex justify-center items-center`}>
+                  <a
+                    href="#video"
+                    css={tw`mx-2 hover:border-b border-black text-lg`}
+                  >
+                    Video
+                  </a>
+                  <a
+                    href="#nilai"
+                    css={tw`mx-2 hover:border-b border-black text-lg`}
+                  >
+                    9 Nilai
+                  </a>
+                  <a
+                    href="#anggota"
+                    css={tw`mx-2 hover:border-b border-black text-lg`}
+                  >
+                    Anggota
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="section">
-            <div
-              css={tw`w-full h-full flex justify-center flex-col items-center -mt-20 px-10`}
-            >
-              <h2
-                css={tw`font-bold text-4xl border-b border-black mb-6 text-center`}
-              >
-                9 Nilai{" "}
-                <span css={tw`text-orange-400`}>Universitas Indonesia</span>
-              </h2>
-              <div css={tw`w-full md:w-9/12`}>
-                <PlayerWrapper>
-                  <ReactPlayer
-                    url="https://www.youtube.com/watch?v=aKx8NuTVl98"
-                    controls
-                    css={tw`absolute top-0 left-0`}
-                    width="100%"
-                    height="100%"
-                  />
-                </PlayerWrapper>
-              </div>
+            <div className="section">
               <div
-                css={tw`mt-6 bg-orange-500 px-3 py-2 md:text-xl text-center`}
+                css={tw`w-full h-full flex justify-center flex-col items-center -mt-20 px-10`}
               >
-                Silakan ditonton dan diambil hikmahnya!
-                <span css={tw`italic`}> - FG 5</span>
+                <h2
+                  css={tw`font-bold text-4xl border-b border-black mb-6 text-center`}
+                >
+                  9 Nilai{" "}
+                  <span css={tw`text-orange-400`}>Universitas Indonesia</span>
+                </h2>
+                <div css={tw`w-full md:w-9/12`}>
+                  <PlayerWrapper>
+                    <ReactPlayer
+                      url="https://www.youtube.com/watch?v=aKx8NuTVl98"
+                      controls
+                      css={tw`absolute top-0 left-0`}
+                      width="100%"
+                      height="100%"
+                    />
+                  </PlayerWrapper>
+                </div>
+                <div
+                  css={tw`mt-6 bg-orange-500 px-3 py-2 md:text-xl text-center`}
+                >
+                  Silakan ditonton dan diambil hikmahnya!
+                  <span css={tw`italic`}> - FG 5</span>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="section" css={tw`text-center`}>
-            {dataNilai.map(Nilai)}
-          </div>
-          <div className="section">
-            <Anggota />
-          </div>
-        </ReactFullpage.Wrapper>
-      )
-    }}
-  />
+            <div className="section" css={tw`text-center`}>
+              {dataNilai.map(Nilai)}
+            </div>
+            <div className="section">
+              <Anggota />
+            </div>
+          </ReactFullpage.Wrapper>
+        )
+      }}
+    />
+  </>
 )
 
 export default Fullpage
