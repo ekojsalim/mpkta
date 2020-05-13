@@ -286,7 +286,7 @@ const Fullpage = () => (
                 <div css={tw`w-full md:w-9/12`}>
                   <PlayerWrapper>
                     <ReactPlayer
-                      url="https://www.youtube.com/watch?v=aKx8NuTVl98"
+                      url="https://youtu.be/h2gpdb-cB7A"
                       controls
                       css={tw`absolute top-0 left-0`}
                       width="100%"
