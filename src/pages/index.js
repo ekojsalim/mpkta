@@ -49,32 +49,55 @@ const dataNilai = [
   {
     nama: "Kemartabatan",
     deskripsi: `Komitmen untuk memperlakukan setiap orang dengan rasa hormat, manusiawi, ketaatan pada norma kesusilaan, kepatutan, atau kepantasan dalam situasi apa pun.`,
-    indikator: [``],
+    indikator: [
+      `Menjunjung tinggi norma kesusilaan dan sopan santun.`,
+      `Memberikan pelayanan prima untuk mencapai kepentingan bersama.`,
+      `Menciptakan area dan wilayah kampus UI sebagai zona yang aman.`,
+    ],
   },
   {
-    nama: "Tanggungjawab",
+    nama: "Tanggung Jawab",
     deskripsi: `Bertanggungjawab dalam melaksanakan tugas jabatan maupun tugas fungsionalnya, serta menghindarkan diri dari benturan kepentingan (conflict of interest) yang dapat merugikan kepentingan UI maupun kepentingan Warga UI lainnya. Termasuk dalam upaya menghindarkan diri dari benturan kepentingan adalah tindakan menolak suap atau sejenisnya yang dapat mempengaruhi pengambilan keputusan dalam jabatan dan fungsinya, yang dapat mengakibatkan kerugian UI maupun Warga UI lainnya.`,
-    indikator: [],
+    indikator: [
+      `Menunjukkan sikap disiplin dalam menuntaskan tanggung jawabnya secara efektif dan efisien.`,
+      `Melakukan tindakan proaktif dan inisiatif yang tinggi sehingga berdampak pada hasil yang berkualitas.`,
+      `Mengupayakan proses pengembangan diri secara terus menerus sebagai bentuk tanggung jawab terhadap diri sendiri, profesi, dan lingkup kerja.`,
+    ],
   },
   {
     nama: "Kebersamaan",
     deskripsi: `Keragaman/kemajemukan merupakan karakteristik bangsa Indonesia yang menjadi kekuatan dan kekayaan Universitas Indonesia. Pengakuan akan kebhinekaan budaya merupakan dasar dari rasa kebersamaan dan menjadi bagian dari jati diri Warga UI sebagai bagian dari bangsa Indonesia. Olah karenanya Warga UI bertekad untuk menjunjung tinggi toleransi dan semangat kebersamaan dalam meniti serta melaksanakan tugas dan tanggungjawab yang dibebankan keada setiap Warga UI di lingkungan kerjanya.`,
-    indikator: [],
+    indikator: [
+      `Memegang teguh identitas sebagai bangsa dan memprioritaskan kemanfaatan bagi Indonesia dengan didasari sikap peduli terhadap kepentingan masyarakat`,
+      `Menjunjung tinggi toleransi terhadap kebhinekaan atau keberagaman suku bangsa, agama dan ras sebagai kekayaan budaya.`,
+      `Bekerjasama dan berkolaborasi untuk membangun sinergi dalam mencapai tujuan bersama.`,
+      `Saling mendukung pencapaian hasil dengan disertai kepekaan terhadap kebutuhan orang lain dan rasa empati.`,
+    ],
   },
   {
     nama: "Keterbukaan",
     deskripsi: `Keterbukaan nurani dan keterbukaan sikap untuk bersedia mendengarkan dan mempertimbangkan dengan sungguh-sungguh pendapat orang lain; keterbukaan akademik untuk secara kritis menerima semua informasi dan hasil temuan akademik pihak lain; dan bersedia membuka/membagi semua informasi pengetahuan yang dimiliki kepada pihak yang berhak mengetahui/berkepentingan, kecuali yang bersifat rahasia.`,
-    indikator: [],
+    indikator: [
+      `Menunjukkan kesediaan untuk mendengarkan, mempertimbangkan, dan menerima masukan dan pendapat orang lain dengan kerendahan hati.`,
+      `Memberikan informasi dengan benar secara terbuka dan dapat dipertanggungjawabkan.`,
+    ],
   },
   {
     nama: "Kebebasan akademik dan otonomi keilmuan",
     deskripsi: `Menjunjung tinggi kebebasan akademik, yaitu kewajiban untuk memelihara dan memajukan ilmu pengetahuan, menjunjung tinggi kebebasan mimbar akademik, yaitu kebebasan menyampaikan pikiran dan pendapat di dalam lingkungan UI maupun dalam forum akademik lainnya.`,
-    indikator: [],
+    indikator: [
+      `Memberikan kebebasan untuk menyampaikan pikiran dan pendapat yang bertanggung jawab di lingkungan UI.`,
+      `Menunjukkan rasa ingin tahu dan memberikan ide-ide kreatif untuk mendorong inovasi dan/atau melakukan perbaikan berkelanjutan`,
+      `Memberikan inspirasi untuk menghasilkan pembaruan baik lewat tulisan, ucapan, mapun tindakan.`,
+    ],
   },
   {
     nama: "Kepatuhan pada peraturan perundang-undangan yang berlaku ",
     deskripsi: `Melaksanakan semua kegiatan di lingkungan UI dengan mematuhi semua peraturan yangberlaku.`,
-    indikator: [],
+    indikator: [
+      `Memahami dan menunaikan tugas dengan cara-cara yang berpadanan dengan peraturan perundang-undangan, aturan, prosedur, panduan UI serta panduan lainnya yang relevan.`,
+      `Melakukan tindakan yang sesuai dengan aturan yang berlaku baik di dalam maupun di luar lingkungan UI.`,
+    ],
   },
 ]
 
